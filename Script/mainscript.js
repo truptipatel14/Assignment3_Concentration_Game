@@ -48,7 +48,7 @@ function generateRandom(){
     }
     console.log(randomarray)
 }
-/*
+
 function clickimage(boxindex)
 {
     if(openimageArray[boxindex] != 1 && (!waiting))
@@ -82,7 +82,7 @@ function clickimage(boxindex)
             DisplayImage();
         }
 }
-*/
+
 
 function DisplayImage()
 {
