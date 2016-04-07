@@ -4,6 +4,7 @@ var openImage = 0;
 var openimageArray = [];
 var lastopenImage = 0;
 var waiting = false;
+var score = 0;
 
 window.onload = function()
 {
@@ -53,6 +54,7 @@ function clickimage(boxindex)
 {
     if(openimageArray[boxindex] != 1 && (!waiting))
         {
+            score++;
             openimageArray[boxindex] = 1;
             openImage++;
             if(openImage > 1)
@@ -112,7 +114,7 @@ function isWin()
             
         }
     DisplayImage();
-    alert("You Win the Game");
+    alert("You Win the Game and Your Score is " +score);
     initialize();
     DisplayImage();
 }
